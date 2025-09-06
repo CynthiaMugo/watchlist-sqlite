@@ -37,7 +37,7 @@ def main():
             dramas = Drama.get_all()
             for d in dramas:
                 status = "Done" if d.completed else "Pending"
-                print(f"{d.id}. {d.title} ({status}) - Due {d.watch_date} [User {d.user_id}]")
+                print(f"{d.id}. {d.title} ({status}) - Watch {d.watch_date} [User {d.user_id}]")
 
         elif choice == "4":
             task_id = int(input("Enter task ID: "))

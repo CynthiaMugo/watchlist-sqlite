@@ -1,5 +1,5 @@
 from database import get_connection
-from database import initialize_db
+# from database import initialize_db
 
 class User:
     def __init__(self, name, email, id=None):
@@ -74,9 +74,9 @@ class Drama:
         conn.commit()
         conn.close()
 
-initialize_db()
-d1 = Drama("Drama A", "Description A", "2023-10-01", 1)
-d2 = Drama("Drama B", "Description B", "2023-10-05", 1)
-d1.save()
-d2.save()
-d1.mark_completed(1)
+# initialize_db()
+# d1 = Drama("Drama A", "Description A", "2023-10-01", 1)
+# d2 = Drama("Drama B", "Description B", "2023-10-05", 1)
+# d1.save()
+# d2.save()
+# d1.mark_completed(1)
